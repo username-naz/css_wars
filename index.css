@@ -10,7 +10,7 @@ body{
     top:50%;
     height:10rem;
     width: 10rem;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
 }
 
 
@@ -24,6 +24,68 @@ body{
     left: 50%;
     border-radius: 3rem;
     
+}
+
+.robot-head-antenna-left{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgb(255, 255, 255);
+    height: 3rem;
+    width: 0.2rem;
+    transform: translate(-50%, -50%);
+    top:-70%;
+    left:30%;
+    border-radius: 2rem;
+    animation: left 2s infinite;
+}
+
+.robot-head-antenna-right{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgb(255, 255, 255);
+    height: 3rem;
+    width: 0.2rem;
+    transform: translate(-50%, -50%);
+    top:-70%;
+    left:70%;
+    border-radius: 2rem;
+    animation: right 2s infinite;
+}
+
+
+@keyframes left{
+    100%{
+
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(-20deg);
+        left:20%;
+    }
+    
+    0%{
+        transform: rotate(0);
+    }
+}
+@keyframes right{
+    100%{
+
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(20deg);
+        left:80%;
+    }
+    
+    0%{
+        transform: rotate(0);
+    }
 }
 
 .robot-head .face{
@@ -65,22 +127,24 @@ body{
     position: absolute;
     background-color: white;
     height: 8rem;
-    width: 2rem;
+    width: 2.5rem;
     transform: translate(-50%, -50%);
     top: 30%;
-    left: -30%;
+    left: -35%;
     transform: rotate(20deg);
-    border-radius: 3rem;
+    border-radius: 1rem 0.2rem 1rem 0.2rem ;
 }
 
 .robot-hand-right{
     position: absolute;
     background-color: white;
     height: 8rem;
-    width: 2rem;
+    width: 2.5rem;
     transform: translate(-50%, -50%);
     top: 30%;
     left: 110%;
     transform: rotate(-20deg);
-    border-radius: 3rem;
+    border-radius: 0.2rem 1rem  0.2rem 1rem  ;
 }
+
+
