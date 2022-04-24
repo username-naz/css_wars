@@ -129,9 +129,9 @@ body{
     height: 8rem;
     width: 2.5rem;
     transform: translate(-50%, -50%);
-    top: 30%;
-    left: -35%;
-    transform: rotate(20deg);
+    top: 70%;
+    left: -20%;
+    /* transform: rotate(20deg); */
     border-radius: 1rem 0.2rem 1rem 0.2rem ;
 }
 
@@ -141,9 +141,9 @@ body{
     height: 8rem;
     width: 2.5rem;
     transform: translate(-50%, -50%);
-    top: 30%;
-    left: 110%;
-    transform: rotate(-20deg);
+    top: 70%;
+    left: 120%;
+    /* transform: rotate(-20deg); */
     border-radius: 0.2rem 1rem  0.2rem 1rem  ;
 }
 
